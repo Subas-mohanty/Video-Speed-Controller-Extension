@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Video Speed Controller",
+  "version": "1.0",
+  "description": "Fast forward or slow down videos in the browser.",
+  "icons": {
+    "128":"logo.png"
+  },
+  "permissions": [
+    "activeTab", "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Speed Up or Slow Down Videos"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
+

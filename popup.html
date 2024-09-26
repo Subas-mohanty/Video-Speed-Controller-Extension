@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Speed Controller</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h3>Adjust Video Speed</h3>
+    <input type="range" name="speed" id="speed" min="0.25" max="5.0" value="1" step="0.1">
+    <div class="outer">
+      <p>Speed: <span id="speedValue">1x</span></p>
+      <button id="resetSpeed">Reset</button>
+    </div>
+    <script src="content.js"></script>
+  </body>
+</html>
