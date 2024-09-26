@@ -7,12 +7,22 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h3>Adjust Video Speed</h3>
-    <input type="range" name="speed" id="speed" min="0.25" max="5.0" value="1" step="0.1">
-    <div class="outer">
-      <p>Speed: <span id="speedValue">1x</span></p>
-      <button id="resetSpeed">Reset</button>
+    <div class="main">
+      <div class="title"> Adjust Video Speed </div>
+      <div class="center">
+        <h2 class="control" id="decrease">-</h2>
+        <input type="range" name="speed" id="speed" min="0.25" max="5.0" value="1" step="0.01">
+        <h2 class="control" id="increase">+</h2>
+      </div>
+      <div class="footer">
+        <p>Speed: <span id="speedValue">1x</span></p>
+        <button id="resetSpeed">Reset</button>
+      </div>
+      <div class="social">
+        <a target="_blank" href="https://x.com/subas256">X</a><span>Follow me on :</span> 
+      </div>
     </div>
+
     <script src="content.js"></script>
   </body>
 </html>

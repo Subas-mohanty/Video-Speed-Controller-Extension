@@ -1,32 +1,71 @@
 body {
-    width: 200px;
+    width: 380px;
     font-family: Arial, sans-serif;
 }
-input[type="range"] {
+.main{
     width: 100%;
-    margin: 10px 0;
+    min-height: 120px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.title{
+    margin: 5px 30%;
+    font-size: medium;
+}
+.center{
+    display: flex;
+    margin: 0 5px;
+    padding: 0 5px;
+    justify-content: center;
+    align-items: center;
+    max-height: 40px;
+}
+.control{
+    cursor: pointer;
+    font-style: normal;
+    font-size: xx-large;
 }
 
-.outer{
+input[type="range"] {
+    width: 90%;
+    margin: 0 10px;
+}
+.footer{
+    min-width: 90%;
     display: flex;
+    font-size: medium;
     justify-content: space-between;
     align-items: center;
-    padding: 2px;
+    margin : 0 15px;
+    margin-top: -12px;
 }
-
-/* Style for the reset button to make it small */
+p{
+   justify-self: center; 
+}
 button {
-    width: 50px; /* Small width */
-    padding: 2px; /* Reduced padding */
-    font-size: 12px; /* Smaller font size */
-    background-color: #333; /* Dark background like in your screenshot */
-    color: white; /* White text */
-    border: none; /* Remove borders */
-    border-radius: 5px; /* Rounded corners */
+    width: 50px; 
+    padding: 2px; 
+    font-size: 12px; 
+    background-color: #333; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
     cursor: pointer;
     text-align: center;
+    justify-self: flex-end;
 }
 
 button:hover {
     background-color: #555; /* Slightly lighter on hover */
+}
+.social{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: small;
+    margin-top: 5px;
+}
+.social a{
+    text-decoration: none;
+    margin-right: 4px;
+    padding: 2px;
 }
